@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/card_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <!-- Confetti row (animated in) -->
+    <TextView
+        android:id="@+id/txtConfetti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="🎊 🎉 🎊 🎉 🎊"
+        android:textSize="28sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- LEVEL UP title (bounces in) -->
+    <TextView
+        android:id="@+id/txtLevelUpTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎉 LEVEL UP! 🎉"
+        android:textColor="@color/duo_yellow"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <!-- Level reached -->
+    <TextView
+        android:id="@+id/txtLevelReached"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="You reached Level 2!"
+        android:textColor="@color/text_primary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Mascot (jumps) -->
+    <ImageView
+        android:id="@+id/imgMascotLevelUp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginVertical="32dp"
+        android:src="@drawable/mascot_image" />
+
+    <!-- Stars row -->
+    <TextView
+        android:id="@+id/txtStars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⭐ ⭐ ⭐"
+        android:textSize="32sp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- 3D Continue Button -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/btn_green_3d">
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="top"
+            android:background="@drawable/btn_green_face"
+            android:text="CONTINUE"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:elevation="0dp" />
+    </FrameLayout>
+
+</LinearLayout>

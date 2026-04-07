@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- PERSISTENT TOP BAR -->
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingHorizontal="16dp"
+        android:background="@color/background">
+
+        <TextView
+            android:id="@+id/topBarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/title_hobby_mastery"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/mascotIcon"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/mascot_image" />
+    </RelativeLayout>
+
+    <!-- HOME: HEADER with golden gradient -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBar"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_gradient"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:padding="12dp">
+
+            <!-- Streak -->
+            <LinearLayout
+                android:id="@+id/streakCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:background="#33FFFFFF"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="10dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🔥" android:textSize="20sp" />
+                <TextView android:id="@+id/txtStreakCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/day_streak" android:textColor="#FFEECC" android:textSize="9sp" android:textAllCaps="true" />
+            </LinearLayout>
+
+            <!-- Total Hours -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="4dp"
+                android:background="#33FFFFFF"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="⭐" android:textSize="20sp" />
+                <TextView android:id="@+id/txtTotalHours" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total_hours" android:textColor="#FFEECC" android:textSize="9sp" android:textAllCaps="true" />
+            </LinearLayout>
+
+            <!-- Daily Goal -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:background="#33FFFFFF"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🎯" android:textSize="20sp" />
+                <TextView android:id="@+id/txtDailyGoalProgress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0/1" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/todays_goal" android:textColor="#FFEECC" android:textSize="9sp" android:textAllCaps="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- HOME: HOBBY LIST -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerLayout"
+        android:layout_above="@id/bottomNavDivider"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="88dp"
+        android:clipToPadding="false"
+        android:scrollbars="none" />
+
+    <!-- STATS PAGE -->
+    <include android:id="@+id/statsView" layout="@layout/fragment_stats"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_below="@id/topBar" android:layout_above="@id/bottomNavDivider"
+        android:visibility="gone" />
+
+    <!-- REWARDS PAGE -->
+    <include android:id="@+id/rewardsView" layout="@layout/fragment_rewards"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_below="@id/topBar" android:layout_above="@id/bottomNavDivider"
+        android:visibility="gone" />
+
+    <!-- SETTINGS PAGE -->
+    <include android:id="@+id/settingsView" layout="@layout/fragment_settings"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_below="@id/topBar" android:layout_above="@id/bottomNavDivider"
+        android:visibility="gone" />
+
+    <!-- Divider -->
+    <View android:id="@+id/bottomNavDivider"
+        android:layout_width="match_parent" android:layout_height="1dp"
+        android:layout_above="@id/bottomNavigation"
+        android:background="@color/card_border" />
+
+    <!-- BOTTOM NAVIGATION -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/card_bg"
+        app:elevation="0dp"
+        app:itemIconSize="20dp"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color"
+        app:labelVisibilityMode="labeled"
+        app:itemActiveIndicatorStyle="@style/NoIndicatorStyle"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <!-- FAB -->
+    <FrameLayout
+        android:id="@+id/fab"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/bottomNavigation"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/fab_orange_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:elevation="6dp">
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:src="@android:drawable/ic_input_add"
+            app:tint="#FFFFFF" />
+    </FrameLayout>
+
+</RelativeLayout>

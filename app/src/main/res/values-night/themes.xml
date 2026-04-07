@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.HobbyMasteryTracker" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:windowBackground">#1A1A2E</item>
+        <item name="colorPrimary">@color/duo_green</item>
+        <item name="colorPrimaryVariant">@color/duo_green_dark</item>
+        <item name="colorSecondary">@color/duo_blue</item>
+        <item name="android:statusBarColor">#1A1A2E</item>
+        <item name="android:navigationBarColor">#16213E</item>
+    </style>
+
+    <style name="Theme.HobbyMasteryTracker" parent="Base.Theme.HobbyMasteryTracker" />
+
+    <style name="NoIndicatorStyle">
+        <item name="android:color">@android:color/transparent</item>
+    </style>
+</resources>

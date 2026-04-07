@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.HobbyMasteryTracker" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="colorPrimary">@color/duo_green</item>
+        <item name="colorPrimaryVariant">@color/duo_green_dark</item>
+        <item name="colorSecondary">@color/duo_blue</item>
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:navigationBarColor">@color/card_bg</item>
+        <item name="android:windowOptOutEdgeToEdgeEnforcement" tools:targetApi="35">true</item>
+    </style>
+
+    <style name="Theme.HobbyMasteryTracker" parent="Base.Theme.HobbyMasteryTracker" />
+
+    <style name="Theme.Splash" parent="Theme.HobbyMasteryTracker">
+        <item name="android:windowBackground">@drawable/header_gradient</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowSplashScreenBackground" tools:targetApi="31">@color/duo_orange</item>
+        <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="31">@mipmap/ic_launcher</item>
+    </style>
+
+    <style name="NoIndicatorStyle">
+        <item name="android:color">@android:color/transparent</item>
+    </style>
+</resources>

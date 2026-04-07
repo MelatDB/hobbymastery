@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@color/card_bg">
+
+    <!-- Flame + Number -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔥"
+        android:textSize="64sp" />
+
+    <TextView
+        android:id="@+id/txtStreakNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/duo_orange"
+        android:textSize="72sp"
+        android:textStyle="bold"
+        android:layout_marginTop="-8dp" />
+
+    <TextView
+        android:id="@+id/txtStreakLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/day_streak"
+        android:textColor="@color/text_secondary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp" />
+
+    <!-- Motivational message -->
+    <TextView
+        android:id="@+id/txtStreakMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/text_primary"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- 7-day dot row -->
+    <LinearLayout
+        android:id="@+id/weekDots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="28dp" />
+
+    <!-- Continue button -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/btn_green_3d">
+
+        <Button
+            android:id="@+id/btnStreakContinue"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="top"
+            android:background="@drawable/btn_green_face"
+            android:text="@string/got_it"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:elevation="0dp" />
+    </FrameLayout>
+
+</LinearLayout>

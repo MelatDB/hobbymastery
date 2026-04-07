@@ -1,0 +1,166 @@
+<resources>
+    <string name="app_name">Hobby Mastery</string>
+
+    <!-- Dashboard -->
+    <string name="title_hobby_mastery">Hobby Mastery</string>
+    <string name="subtitle_journey">Track your 10,000 hour journey</string>
+    <string name="day_streak">Day Streak</string>
+    <string name="total_hours">Total Hours</string>
+    <string name="plus_one_hour">+1 hour of practice!</string>
+
+    <!-- Stats -->
+    <string name="mastery_stats">Mastery Stats</string>
+    <string name="weekly_progress">Your weekly progress</string>
+    <string name="this_week">This Week</string>
+    <string name="path_to_mastery">Path to Mastery</string>
+
+    <!-- Rewards -->
+    <string name="rewards">Rewards</string>
+    <string name="earn_badges">Earn badges as you practice</string>
+    <string name="your_badges">Your Badges</string>
+    <string name="total_xp">Total Experience Points</string>
+    <string name="badge_first_hour">First Hour</string>
+    <string name="badge_dedicated">Dedicated</string>
+    <string name="badge_century">Century</string>
+    <string name="badge_halfway">Halfway</string>
+    <string name="badge_master">Master</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="manage_preferences">Manage your preferences</string>
+    <string name="preferences">Preferences</string>
+    <string name="notifications">🔔  Notifications</string>
+    <string name="dark_mode">🌙  Dark Mode</string>
+    <string name="sound_effects">🔊  Sound Effects</string>
+    <string name="reminder_time">⏰  Reminder Time</string>
+    <string name="daily_goal">🎯  Daily Goal</string>
+    <string name="language">🌍  Language</string>
+    <string name="privacy_policy">🔒  Privacy Policy</string>
+    <string name="help_support">❓  Help &amp; Support</string>
+    <string name="reset_streak">🔄  Reset Streak</string>
+    <string name="clear_all_data">🗑️  Clear All Data</string>
+    <string name="log_out">LOG OUT</string>
+    <string name="version">Hobby Mastery v1.0.0</string>
+
+    <!-- Add hobby -->
+    <string name="master_new_skill">Master a New Skill</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="hobby_hint">e.g. Piano, Coding, Gym</string>
+
+    <!-- Dialogs -->
+    <string name="delete_hobby_title">Delete hobby?</string>
+    <string name="delete_hobby_msg">This will permanently remove this hobby and all its progress.</string>
+    <string name="delete">Delete</string>
+    <string name="reset_streak_title">Reset Streak?</string>
+    <string name="reset_streak_msg">Your current streak will be set to 0.</string>
+    <string name="reset">Reset</string>
+    <string name="clear_data_title">Clear All Data?</string>
+    <string name="clear_data_msg">This will delete all hobbies and progress permanently.</string>
+    <string name="clear">Clear</string>
+    <string name="streak_reset_toast">Streak reset</string>
+    <string name="data_cleared_toast">All data cleared</string>
+    <string name="logout_title">Log Out?</string>
+    <string name="logout_msg">Your data will remain on this device.</string>
+    <string name="logged_out_toast">Logged out</string>
+    <string name="plus_practice">+1 hour of practice!</string>
+    <string name="permission_required">Permission Required</string>
+    <string name="alarm_permission_msg">To send exact reminders, please allow \'Alarms &amp; Reminders\' permission in Settings.</string>
+    <string name="open_settings">Open Settings</string>
+    <string name="daily_goal_title">Daily Goal</string>
+    <string name="help_title">Help &amp; Support</string>
+    <string name="help_msg">Tap any hobby card to log +1 hour of practice.\n\nLong-press a hobby to delete it.\n\nKeep your streak alive by practicing every day!</string>
+    <string name="got_it">Got it</string>
+    <string name="privacy_title">Privacy Policy</string>
+    <string name="privacy_msg">All your data is stored locally on your device. We don\'t collect or share any personal information.</string>
+    <string name="ok">OK</string>
+
+    <!-- Notification -->
+    <string name="notif_title">Time to practice! 🎵</string>
+    <string name="notif_body">Keep your streak alive — log some hours today.</string>
+    <string name="notif_channel_name">Daily Reminder</string>
+    <string name="notif_channel_desc">Daily practice reminder</string>
+
+    <string name="level">Level</string>
+
+    <!-- Streak dialog -->
+    <string name="streak_msg_0">Start your streak today! 💪</string>
+    <string name="streak_msg_1">Great start! Come back tomorrow!</string>
+    <string name="streak_msg_3">3 days strong! Keep it up! 🔥</string>
+    <string name="streak_msg_7">One week streak! You\'re on fire! 🔥🔥</string>
+    <string name="streak_msg_30">30 days! You\'re unstoppable! 👑</string>
+    <string name="streak_msg_default">Keep the streak alive! Practice today!</string>
+
+    <string name="badge_streak_7">7-Day Streak</string>
+    <string name="badge_streak_30">30-Day Streak</string>
+    <string name="badge_streak_100">100-Day Streak</string>
+    <string name="badge_streak_7_sub">7 days in a row</string>
+    <string name="badge_streak_30_sub">30 days in a row</string>
+    <string name="badge_streak_100_sub">100 days in a row</string>
+    <string name="streak_badges">🔥 Streak Badges</string>
+    <string name="todays_goal">Today\'s goal</string>
+
+    <!-- Streak history -->
+    <string name="streak_history_title">Streak History</string>
+    <string name="no_practice">No practice</string>
+    <string name="day_detail_title">%1$s</string>
+    <string name="hours_logged">Hours logged: %1$s</string>
+
+    <!-- Badge subtitles -->
+    <string name="hrs">hrs</string>
+    <string name="hrs_format">%1$,d / 10,000 %2$s</string>
+    <string name="badge_1hr_sub">1 hr total</string>
+    <string name="badge_10hr_sub">10 hrs total</string>
+    <string name="badge_100hr_sub">100 hrs total</string>
+    <string name="badge_5000hr_sub">5,000 hrs total</string>
+    <string name="badge_10000hr_sub">10,000 hrs total</string>
+
+    <!-- Milestones -->
+    <string name="milestone_100">100 hrs</string>
+    <string name="milestone_500">500 hrs</string>
+    <string name="milestone_1000">1,000 hrs</string>
+    <string name="milestone_5000">5,000 hrs</string>
+    <string name="milestone_10000">10,000 hrs — MASTER</string>
+
+    <!-- Profile -->
+    <string name="profile_default_name">Hobby Master</string>
+    <string name="profile_tap_hint">Tap to set your name</string>
+    <string name="edit_name_title">Edit Your Name</string>
+    <string name="name_hint">Enter your name</string>
+    <string name="save">Save</string>
+
+    <string name="how_many_hours">How many hours did you practice?</string>
+    <string name="hours_hint">e.g. 1.5</string>
+
+    <string name="new_user_title">New User?</string>
+    <string name="new_user_msg">This will start fresh for the new user. Continue?</string>
+    <string name="yes">Yes</string>
+
+    <string name="mastered_hobbies">👑 Mastered Hobbies</string>
+    <string name="no_mastered_yet">No mastered hobbies yet. Keep practicing!</string>
+
+    <string name="get_started">GET STARTED</string>
+
+    <string name="log_mode">⏱️  Log Mode</string>
+    <string name="log_mode_tap">Tap (+1 hr)</string>
+    <string name="log_mode_enter">Enter hours</string>
+
+    <!-- Settings sections -->
+    <string name="section_app">App</string>
+    <string name="section_data">Data</string>
+
+    <!-- Days of week -->
+    <string name="day_mon">Mon</string>
+    <string name="day_tue">Tue</string>
+    <string name="day_wed">Wed</string>
+    <string name="day_thu">Thu</string>
+    <string name="day_fri">Fri</string>
+    <string name="day_sat">Sat</string>
+    <string name="day_sun">Sun</string>
+
+    <!-- Nav -->
+    <string name="nav_home">Home</string>
+    <string name="nav_stats">Stats</string>
+    <string name="nav_rewards">Rewards</string>
+    <string name="nav_settings">Settings</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#1A1A2E</color>
+    <color name="card_bg">#16213E</color>
+    <color name="card_border">#0F3460</color>
+    <color name="text_primary">#EAEAEA</color>
+    <color name="text_secondary">#9A9AB0</color>
+    <color name="muted">#0F3460</color>
+    <color name="duo_bg_gray">#1A1A2E</color>
+    <color name="duo_card_stroke">#0F3460</color>
+    <color name="text_main">#EAEAEA</color>
+    <color name="text_sub">#9A9AB0</color>
+    <color name="white">#16213E</color>
+    <color name="milestone_bg">#1E2A45</color>
+</resources>
