@@ -334,8 +334,4 @@ steps to reproduce.
   [Material Components](https://github.com/material-components/material-components-android),
   and [Room](https://developer.android.com/training/data-storage/room).
 
-## License
 
-No license file is currently included in this repository. If you intend for others
-to reuse or contribute to this code, add a `LICENSE` file (for example, MIT) so the
-terms are clear.
